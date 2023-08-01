@@ -6,7 +6,7 @@
 /*   By: yoelansa <yoelansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 21:25:57 by yoelansa          #+#    #+#             */
-/*   Updated: 2023/08/01 18:05:05 by yoelansa         ###   ########.fr       */
+/*   Updated: 2023/08/02 00:46:25 by yoelansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,30 @@ typedef struct s_args
 	int				tt_die;
 	int				tt_sleep;
 	int				need_eat;
-	size_t			philo_id;
-	size_t			start;
+	int				save_eating;
+	size_t			p_id;
+	size_t			s;
 	size_t			last_meal;
 	pthread_mutex_t	*m_fork;
 	pthread_mutex_t	*m_eat;
 	pthread_mutex_t	*m_print;
+	pthread_mutex_t	test_m;
 	pthread_mutex_t	*m_last_meal;
 }	t_args;
+
+typedef struct s_mutex
+{
+	pthread_mutex_t	*fork;
+	pthread_mutex_t	*eat;
+	pthread_mutex_t	*print;
+	pthread_mutex_t	*last_m;
+}	t_mutex;
 
 int		_atoi(char *str);
 int		_valid_args(int ac, char **args);
 void	init_args(char **av, t_args *args);
-size_t	get_ms_time(void);
+size_t	_time(void);
 void	_usleep(size_t time_activite);
-void	is_dead(t_args *args);
+int		is_dead(t_args *args, int i);
 
 #endif

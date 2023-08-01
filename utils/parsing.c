@@ -6,7 +6,7 @@
 /*   By: yoelansa <yoelansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 11:54:58 by yoelansa          #+#    #+#             */
-/*   Updated: 2023/08/01 15:09:08 by yoelansa         ###   ########.fr       */
+/*   Updated: 2023/08/01 21:17:22 by yoelansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int	_valid_args(int ac, char **args)
 			printf("incorrect numbers\n");
 			return (1);
 		}
-		else if (_atoi(args[i]) == -1)
+		else if (_atoi(args[i]) == -1 || !_atoi(args[i]))
 		{
 			printf("incorrect arguments\n");
 			return (1);
