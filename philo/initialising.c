@@ -6,11 +6,11 @@
 /*   By: yoelansa <yoelansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 12:00:50 by yoelansa          #+#    #+#             */
-/*   Updated: 2023/08/02 00:46:59 by yoelansa         ###   ########.fr       */
+/*   Updated: 2023/08/02 16:39:48 by yoelansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/header.h"
+#include "header.h"
 
 size_t	_time(void)
 {

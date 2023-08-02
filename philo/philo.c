@@ -6,11 +6,11 @@
 /*   By: yoelansa <yoelansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 21:26:03 by yoelansa          #+#    #+#             */
-/*   Updated: 2023/08/02 00:37:38 by yoelansa         ###   ########.fr       */
+/*   Updated: 2023/08/02 16:39:45 by yoelansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/header.h"
+#include "header.h"
 
 void	_print(char *msg, t_args *args, size_t id)
 {

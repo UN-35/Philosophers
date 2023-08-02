@@ -6,11 +6,11 @@
 /*   By: yoelansa <yoelansa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 00:47:10 by yoelansa          #+#    #+#             */
-/*   Updated: 2023/08/02 00:47:27 by yoelansa         ###   ########.fr       */
+/*   Updated: 2023/08/02 16:39:55 by yoelansa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/header.h"
+#include "header.h"
 
 int	end_procces(t_args *a, int i)
 {
